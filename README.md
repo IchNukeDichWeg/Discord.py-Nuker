@@ -28,7 +28,7 @@ Scroll down to see what each command does
 
 ---
 
-I added a few Variables at the to make it easier for you to use to Bot and adjust it like you wish. They should be self-explanatory, a few have a little description to what it is for.
+I added a few Variables at the to make it easier for you to use to Bot and adjust it like you wish. They should be self-explanatory, a few have a little description to what it is for. If you dont understand them make sure to create a Issue and ill help you out.
 Also Check the Nuker Settings to turn on / off (True/False) what you want the Bot to do once you run the Nuke Command
 
 ---
