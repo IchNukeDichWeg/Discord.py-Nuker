@@ -1,2 +1,24 @@
-# Discord.py-Nuker
-My own Discord.py Nuker with Banall, Kickall, DM all, Nickall and more
+# Discord Nuker made with Python
+
+A Nuker I made with commands such as
+
+
+-Ban all
+
+-Kick all
+
+-Nick all
+
+-DM all
+
+-Nuke
+
+-guildnuke
+
+-VC Spam
+
+-Channel Spam
+
+-Category Spam 
+
+-DM Spam
