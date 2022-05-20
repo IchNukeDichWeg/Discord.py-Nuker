@@ -14,7 +14,7 @@ GUILD_NAME = "L Server"
 GUILD_ICON_CHANGE_FILE_NAME = 'image78.jpeg'
 ROLE_CREATE_NAME = "this is a role"
 ROLE_SPAM_AMOUNT = 20
-#     if you dont specify any name while running the command "Nickall" it will change-
+#     if you dont specify any name while running the command "nickall" it will change-
 #     the Nicknames to the name below 
 NICKALL = "Nuked"
 PREFIX = "!"
