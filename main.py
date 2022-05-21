@@ -176,7 +176,7 @@ async def guildnuke(ctx, guild_id):
        print(Fore.GREEN + f"{role.name} Has not been deleted" + Fore.RESET)
     with open(GUILD_ICON_CHANGE_FILE_NAME, 'rb') as f:
         icon = f.read()
-    await guild.edit(name='Name', icon=icon)
+    await guild.edit(icon=icon)
     print(Fore.GREEN + "Guild Icon Changed" + Fore.RESET)
     await guild.edit(name=GUILD_NAME)
     print(f"{Fore.GREEN}Guild name changed successfully{Fore.RESET}")
