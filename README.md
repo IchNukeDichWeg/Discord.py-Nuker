@@ -80,7 +80,7 @@ Will Nuke the Server with Give everyone Admin, Delete all channels, Delete all R
 ```
 #### Guildnuke
 
-Used if you wana Nuke a Server your not in but ur Bot is or If someone leaks his Bot Tokens and you wana Nuke it (use command !guilds to see the Bots Servers and the Server ID)
+Used if you wana Nuke a Server your not in but ur Bot is or If someone leaks his Bot Tokens and you wana Nuke it (use command !guilds to see the Bots Servers and the Server ID) it will also create a Invite to the Server in ur Termial for you to join and see the Nuked Server.
 
 ```
 !guildnuke <guildid>
