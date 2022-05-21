@@ -24,6 +24,8 @@ A Nuker I made with commands such as
 
 * DM Spam
 
+* Lagspam
+
 * more soon...
 
 Scroll down to see what each command does and how to Create and Invite a Bot if you didnt already know
@@ -81,10 +83,10 @@ Will change every Memeber's Nickname thats below the Bot
 ```
 #### DM all
 
-Will DM every member possible with whatever message you want (imput the message in the Source Code under `DM_ALL_MESSAGE = ""`)
+Will DM every member possible with whatever message you want
 
 ```
-!dmall
+!dmall <message>
 ```
 #### Nuke
 
@@ -106,6 +108,12 @@ Displays all the Servers the Bot is in including the Server ID (usefull for Guil
 
 ```
 !guilds
+```
+#### Stop
+
+Will Stop running the Script
+```
+!stop
 ```
 #### VC Spam
 
@@ -133,6 +141,12 @@ Will Spam Category with whatever name and amount you want
 Will Spam someones DM's with whatever Message and amount you want (User you want to spam needs to be In the same Server as Bot)
 ```
 !dmspam <user> <amount> <message>
+```
+#### Lagspam
+
+Will spam all channel in the Server with a a certain Emjoi and make it lag(might crash ur Discord)
+```
+!lagspam
 ```
 
 ---
