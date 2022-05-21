@@ -24,7 +24,7 @@ A Nuker I made with commands such as
 
 * DM Spam
 
-Scroll down to see what each command does
+Scroll down to see what each command does and how to Create and Invite a Bot if you didnt already know
 
 ---
 
@@ -58,14 +58,14 @@ Will change every Memeber's Nickname thats below the Bot
 ```
 #### DM all
 
-Will DM every member possible with a Set Message
+Will DM every member possible with whatever message you want (imput the message in the Source Code under `DM_ALL_MESSAGE = ""`)
 
 ```
 !dmall
 ```
 #### Nuke
 
-Will Nuke the Server with Delete all channels, Delete all Roles, Delete all Emojies, Change Server Name and Icon, Create Roles with a Custom Name, Spam Create Channels and Spam a set message
+Will Nuke the Server with Give everyone Admin, Delete all channels, Delete all Roles, Delete all Emojies, Change Server Name and Icon, Create Roles with a Custom Name, Spam Create Channels and Spam a set message
 
 ```
 !nuke
