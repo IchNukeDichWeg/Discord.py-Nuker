@@ -24,6 +24,8 @@ A Nuker I made with commands such as
 
 * DM Spam
 
+* more soon...
+
 Scroll down to see what each command does and how to Create and Invite a Bot if you didnt already know
 
 And feel free to copy and change it like you want.
@@ -124,4 +126,8 @@ Will Spam someones DM's with whatever Message and amount you want (User you want
 
 You need to create your bot application (essentially the bot's account) on the Discord development page. There is an excellent guide here: https://discordpy.readthedocs.io/en/latest/discord.html which outlines the steps on how to make your bot application. Please also make sure you enable PRIVILEGED INTENTS which you can do here (https://discordpy.readthedocs.io/en/latest/intents.html#privileged-intents). Once finished, start the application and copy your token into the Code under ``` token = "UR BOT TOKEN HERE" ``` then just Run it , Invite the Bot to the Server and do whatever Command you want.
 
-To create an invite link, head back to https://discord.com/developers/applications/me under the "Applications" section, click on your bot application, and open the OAuth2 page. At the bottom of the page, you'll find Discord's OAuth2 URL generator. Select the bot and `applications.commands` options. Once you select the `bot` option, a list of permissions will appear, allowing you to configure the permissions your bot needs. Chose `Administrator`. Grab the link via the "Copy" button and enter it in your browser. Then chose the Server press `Continue` then Press `Authorize` and then your ready to use it,
+To create an invite link, head back to https://discord.com/developers/applications/me under the "Applications" section, click on your bot application, and open the OAuth2 page. At the bottom of the page, you'll find Discord's OAuth2 URL generator. Select the bot and `applications.commands` options. Once you select the `bot` option, a list of permissions will appear, allowing you to configure the permissions your bot needs. Chose `Administrator`. Grab the link via the "Copy" button and enter it in your browser. Then chose the Server press `Continue` then Press `Authorize` and then your ready to use it
+
+---
+
+Any good coders help me improve it and dont come at me ik its not the most advanced one
