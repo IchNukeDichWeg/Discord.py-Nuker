@@ -30,8 +30,21 @@ Scroll down to see what each command does and how to Create and Invite a Bot if 
 
 And feel free to copy and change it like you want.
 
-### Note: You need to have a Image for the Bot to Change the Servers ones to, if not it wont run. I will make sure to get the Nuker Settings working for guildicon.
+### Note: You need to have a Image for the Bot to Change the Servers ones to, if not it wont run. I will make sure to get the Nuker Settings working for guildicon. If you dont want it just delete this part of the Script.
+```
+    guild = ctx.message.guild
+    if guildicon == True:
+      with open(GUILD_ICON_CHANGE_FILE_NAME, 'rb') as f:
+        icon = f.read()
+    await guild.edit(icon=icon)
+    print(Fore.GREEN + "Guild Icon Changed" + Fore.RESET)
+```
+and this for Guildnuke
 
+    with open(GUILD_ICON_CHANGE_FILE_NAME, 'rb') as f:
+        icon = f.read()
+    await guild.edit(icon=icon)
+    print(Fore.GREEN + "Guild Icon Changed" + Fore.RESET)
 ---
 
 The Nuker addition file was made to get more Pings. If you want to Nuke just run it at the same time as the normal File, change the Variables to what you want (SPAM_MESSAGE is the message its gona spam, WEBHOOK_NAME is the Webhook name) add ur Bot Token and you dont have to do anything else it will spam at the same time as the Bot will after u use the !nuke command.
