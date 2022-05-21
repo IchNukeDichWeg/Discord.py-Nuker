@@ -28,7 +28,11 @@ Scroll down to see what each command does and how to Create and Invite a Bot if 
 
 ---
 
-I added a few Variables at the to make it easier for you to use to Bot and adjust it like you wish. They should be self-explanatory, a few have a little description to what it is for. If you dont understand them make sure to create a Issue and ill help you out.
+The Nuker addition file was made to get more Pings. If you want to Nuke just run it at the same time as the normal File, change the Variables to what you want (SPAM_MESSAGE is the message its gona spam, WEBHOOK_NAME is the Webhook name) add ur Bot Token and you dont have to do anything else it will spam at the same time as the Bot will after u use the !nuke command.0--
+
+---
+
+I added a few Variables at the to make it easier for you to use to Bot and adjust it like you wish. They should be self-explanatory, I still added a description to what it is for each of them. If you dont understand them make sure to create a Issue and ill help you out.
 Also Check the Nuker Settings to turn on / off (True/False) what you want the Bot to do once you run the Nuke Command
 
 ---
