@@ -7,11 +7,18 @@ import asyncio
 
 token = "UR BOT TOKEN HERE"
 
+#  this are the names of the channels the Bot is gona chose from, aswell as the amount of channels (I recommend 40)
 SPAM_CHANNEL =  ["easy", "we run you" , "shit server" , "nuked"]
 SPAM_CHANNEL_AMOUNT = 40
-SPAM_MESSAGE = ["@everyone Nuked faggots"] 
+SPAM_MESSAGE = ["@everyone Nuked faggots"]
+#  this it the name its gona change the server to
 GUILD_NAME = "L Server"
+#   To also have change guild icon,
+#   Download the image you want and name it whatever you want. Try and make the name unique.
+#   Then change the Variable GUILD_ICON_CHANGE_FILE_NAME to the same name as the File you just dowloaded and changed to
 GUILD_ICON_CHANGE_FILE_NAME = 'image78.jpeg'
+# this is the name and amount of Roles its gona create with the !nuke command
+#  I recommend not more then 20 and they get spam created with a Random Color
 ROLE_CREATE_NAME = "this is a role"
 ROLE_SPAM_AMOUNT = 20
 #     if you dont specify any name while running the command "nickall" it will change-
@@ -19,7 +26,7 @@ ROLE_SPAM_AMOUNT = 20
 NICKALL = "Nuked"
 PREFIX = "!"
 BOT_STATUS = "Ready to be used"
-#     If you only send these commands "vcspam" , "caspam" or "cspam" without a name or amount, it will spam 
+#     If you only send these commands "!vcspam" , "!caspam" or "!cspam" without a name or amount, it will spam 
 #     the amount and name below for each command
 VCSPAM_AMOUNT = 10
 VCSPAM_NAME = "kek"
@@ -32,6 +39,7 @@ DM_ALL_MESSAGE = "Hello"
 #     Nuker Settings to chose what you want to Bot to do once u run !nuke
 #     Write "True" if you want the Bot to do it or "False" if you dont want it
 #     Guildnuke Command will do everything
+#     Note: Turning of guildicon will make it Bug out so leave it on
 
 giveadmin = True
 channeldel = True
@@ -40,11 +48,6 @@ emojidel = True
 guildicon = True
 guildname = True
 rolespam = True
-
-#   To also have change guild icon,
-#   Download the image you want and name it whatever you want. Try and make the name unique.
-#   Then change the Variable GUILD_ICON_CHANGE_FILE_NAME to the Icons file name so it changes it in 
-#   the code also, enjoy
 
 intents = discord.Intents.all()
 client = commands.Bot(command_prefix=PREFIX, intents=intents)
@@ -278,6 +281,5 @@ async def caspam(ctx, amount=CASPAM_AMOUNT, *, name=CASPAM_NAME):
 async def on_guild_channel_create(channel):
   while True:
     await channel.send(random.choice(SPAM_MESSAGE))
-
 
 client.run(token, bot=True)
